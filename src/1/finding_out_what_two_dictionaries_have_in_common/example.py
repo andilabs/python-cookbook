@@ -18,3 +18,13 @@ print('Common keys:', a.keys() & b.keys())
 print('Keys in a not in b:', a.keys() - b.keys())
 print('(key,value) pairs in common:', a.items() & b.items())
 
+# Note Python3:
+# >>> type(b.keys())
+# <class 'dict_keys'>
+
+
+
+# while in Python 2.7:
+#>>> type(b.keys())
+#<type 'list'>
+
