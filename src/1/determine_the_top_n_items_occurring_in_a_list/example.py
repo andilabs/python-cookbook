@@ -10,6 +10,7 @@ words = [
 ]
 
 from collections import Counter
+# https://docs.python.org/3.1/library/collections.html
 word_counts = Counter(words)
 top_three = word_counts.most_common(3)
 print(top_three)
