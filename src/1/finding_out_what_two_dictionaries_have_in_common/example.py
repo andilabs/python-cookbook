@@ -29,6 +29,7 @@ print('(key,value) pairs in common:', a.items() & b.items())
 #<type 'list'>
 
 # 4.10.1. Dictionary view objects
+
 # The objects returned by dict.keys(), dict.values() and dict.items() are view objects. 
 # They provide a dynamic view on the dictionary’s entries, which means that when the dictionary changes, 
 # the view reflects these changes.
