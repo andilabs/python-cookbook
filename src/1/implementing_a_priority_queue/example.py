@@ -2,6 +2,8 @@
 #
 # Example of a priority queue
 
+# THEORY https://www.youtube.com/watch?v=yIUFT6AKBGE
+
 import heapq
 
 class PriorityQueue:
