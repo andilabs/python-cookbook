@@ -4,10 +4,13 @@ The key is a function computing a key value for each element.
 If not specified or is None, key defaults to an identity function and returns the element unchanged. 
 Generally, the iterable needs to already be sorted on the same key function.
 
+!!!!!!!!!!!!!!!!!!!!!!!!!! FUCKING IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!:
+
 The operation of groupby() is similar to the uniq filter in Unix. 
 It generates a break or new group every time the value of the key function changes
 (which is why it is usually necessary to have sorted the data using the same key function). 
 That behavior differs from SQL’s GROUP BY which aggregates common elements regardless of their input order.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 The returned group is itself an iterator that shares the underlying iterable with groupby(). 
 Because the source is shared, when the groupby() object is advanced, the previous group is no longer visible. 
