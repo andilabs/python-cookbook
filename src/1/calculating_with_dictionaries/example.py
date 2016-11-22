@@ -12,6 +12,8 @@ prices = {
 
 # Find min and max price
 min_price = min(zip(prices.values(), prices.keys()))
+# use zip to make fast inver keys with values
+# zip - Unlike in Python 2, the zip function in Python 3 returns an iterator. 
 max_price = max(zip(prices.values(), prices.keys()))
 
 print('min price:', min_price)
