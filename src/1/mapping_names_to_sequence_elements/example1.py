@@ -19,4 +19,3 @@ records = [
 ]
 
 print(compute_cost(records))
-
