@@ -35,8 +35,11 @@ counts = [ 0, 3, 10, 4, 1, 7, 6, 1]
 
 from itertools import compress
 
-more5 = [ n > 5 for n in counts ]
+more5 = [ n > 5 for n in counts ] # True/False list
 a = list(compress(addresses, more5))
+#Make an iterator that filters elements from data returning only those that have a corresponding element
+#in selectors that evaluates to True. Stops when either the data or selectors iterables has been exhausted. 
+# https://docs.python.org/3.1/library/itertools.html#itertools.compress
 print(a)
 
 
