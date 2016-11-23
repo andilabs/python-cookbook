@@ -12,3 +12,4 @@ print(users)
 
 # Sort it by user-id
 print(sorted(users, key=attrgetter('user_id')))
+# using operator.attrgetter to sort by class objects field
