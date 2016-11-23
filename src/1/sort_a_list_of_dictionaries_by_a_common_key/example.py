@@ -23,5 +23,6 @@ print("Sorted by uid:")
 pprint(rows_by_uid)
 
 rows_by_lfname = sorted(rows, key=itemgetter('lname','fname'))
+# with itemgetter we can achive sorting by multiple keys
 print("Sorted by lname,fname:")
 pprint(rows_by_lfname)
