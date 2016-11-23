@@ -15,7 +15,9 @@ def do_bar(s):
     print('bar', s)
 
 for tag, *args in records:
-    if tag == 'foo':
+#python3 unpacking in for any number of args with *
+     if tag == 'foo':
         do_foo(*args)
     elif tag == 'bar':
         do_bar(*args)
+
