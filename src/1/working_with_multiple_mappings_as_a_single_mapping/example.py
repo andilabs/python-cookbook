@@ -7,7 +7,9 @@ b = {'y': 2, 'z': 4 }
 
 # (a) Simple example of combining
 from collections import ChainMap
-c = ChainMap(a,b)
+c = ChainMap(a,b) #order of passed dicts matters!!!
+
+
 print(c['x'])      # Outputs 1  (from a)
 print(c['y'])      # Outputs 2  (from b)
 print(c['z'])      # Outputs 3  (from a)
@@ -18,7 +20,7 @@ print('c.keys():', list(c.keys()))
 print('c.values():', list(c.values()))
 
 # Modify some values
-c['z'] = 10
+c['z'] = 10 # only value under key 'z' in a will be affected
 c['w'] = 40
 del c['x']
 print("a:", a)
