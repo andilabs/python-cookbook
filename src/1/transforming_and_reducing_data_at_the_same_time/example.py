@@ -22,3 +22,5 @@ portfolio = [
 ]
 min_shares = min(s['shares'] for s in portfolio)
 print(min_shares)
+
+
