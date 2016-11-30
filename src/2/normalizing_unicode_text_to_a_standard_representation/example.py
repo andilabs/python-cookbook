@@ -23,6 +23,7 @@ n_s2 = unicodedata.normalize('NFC', s2)
 print('n_s1 == n_s2', n_s1 == n_s2)
 print(len(n_s1), len(n_s2))
 
+
 # (d) Example of normalizing to a decomposed form and stripping accents
 t1 = unicodedata.normalize('NFD', s1)
 print(''.join(c for c in t1 if not unicodedata.combining(c)))
